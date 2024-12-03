@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Kadar Gayle 12/2/2024 -->
+<head>
+	<meta charset="UTF-8">
+	<title>Sophie Bluel - Interior Designer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap"
+		rel="stylesheet">
+	<meta name="description" content="">
+	<script src="https://kit.fontawesome.com/17f6642d7e.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+	<header>
+		<h1>Sophie Bluel <span>Interior Designer</span></h1>
+		<nav>
+			<ul>
+				<li><a class="active" href="./index.html">Projects</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<li><a href="./login.html" class="logout">Login</a></li>
+				<li><a href="#" class="admin"></a></li>
+				<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- Modals-->
+	<!-- Modal 1 -->
+
+	<div class="container-modals">
+
+		<!-- Modale 1 -->
+		<section class="modal-project">
+			<span><i class="fa-solid fa-xmark"></i></span>
+			<h2>Photo Gallery</h2>
+
+			<div class="container-gallery-button">
+				<div class="project-modal"></div>
+				<div class="container-button-modal">
+					<button class="button-modal-1">Add a Photo</button>
+				</div>
+			</div>
+		</section>
+
+		<!-- Modale 2 -->
+		<section class="modal-addworks">
+			<span class="arrow-left"><i class="fa-solid fa-arrow-left"></i></span>
+			<span class="xmark"><i class="fa-solid fa-xmark"></i></span>
+			<h2>Add A Photo</h2>
+
+			<form id="form-add-new-work">
+				<div class="container-file">
+					<i class="fa-regular fa-image"></i>
+					<label for="file" class="label-file">+ Add A Photo</label>
+					<p>jpg, png : 4MB max</p>
+					<input type="file" name="image" id="file" accept="image/jpeg, image/png" required>
+					<img id="previewImage" src="#" alt="Image Preview">
+				</div>
+				<label for="title">
+					<Title></Title>
+				</label>
+				<input type="text" name="title" id="title" required>
+				<label for="category-input">Category</label>
+
+				<select id="category-input" name="category" required>
+					<option value="" disabled selected hidden>Select a Category</option>
+					<option value="1">Objects</option>
+					<option value="2">Appartments</option>
+					<option value="3">Hotels & retaurants</option>
+				</select>
+
+				<div class="container-button-addworks">
+					<button type="submit" id="submitBtn" class="button-modal-2 button-modal-2-active">Submit</button>
+				</div>
+			</form>
+		</section>
+
+	</div>
+
+	<!-- Modal 2 -->
+
+	<main>
+		<section id="introduction">
+			<figure>
+				<img src="./assets/images/sophie-bluel.png" alt="">
+			</figure>
+			<article>
+				<h2>Space Designer</h2>
+				<p>I tell your story and bring your ideas to life. I work with you every step of the way—from the design
+					stage until the very end of the project.</p>
+				<p>Together, we’ll decide on the volumes, materials, and colors, while maintaining the space’s character
+					and selection of materials. Every single aspect of the project will be thoroughly monitored,
+					ensuring it remains on schedule and on budget.</p>
+				<p>If necessary, a multidisciplinary team can be brought into your project, including an accredited
+					architect and a decorator.</p>
+			</article>
+		</section>
+		<section id="portfolio">
+			<h2>My Projects</h2>
+
+			<!-- Filter Buttons-->
+			<div class="container-filters">
+				<button class="buttons-filters active" id="0">All</button>
+
+			</div>
+
+			<div class="gallery">
+				<figure>
+					<img src="assets/images/abajour-tahina.png" alt="Tahina Lampshade">
+					<figcaption>Tahina Lampshade</figcaption>
+				</figure>
+				<figure>
+					<img src="assets/images/appartement-paris-v.png" alt="Paris V Appartment">
+					<figcaption>Paris V Appartment</figcaption>
+				</figure>
+				<figure>
+					<img src="assets/images/restaurant-sushisen-londres.png" alt="Sushisen Restaurant - London">
+					<figcaption>Sushisen Restaurant - London</figcaption>
+				</figure>
+				<figure>
+					<img src="assets/images/la-balisiere.png" alt="La Balisière” Villa – Port-Louis">
+					<figcaption>“La Balisière” Villa – Port-Louis</figcaption>
+				</figure>
+				<figure>
+					<img src="assets/images/structures-thermopolis.png" alt="Thermopolis Structures">
+					<figcaption>Thermopolis Structures</figcaption>
+				</figure>
+				<figure>
+					<img src="assets/images/appartement-paris-x.png" alt="Paris X Appartment">
+					<figcaption>Paris X Appartment</figcaption>
+				</figure>
+				<figure>
+					<img src="assets/images/le-coteau-cassis.png" alt="Le Coteau” Pavillon - Cassis">
+					<figcaption>“Le Coteau” Pavillon - Cassis</figcaption>
+				</figure>
+				<figure>
+					<img src="assets/images/villa-ferneze.png" alt="Ferneze Villa - Elba">
+					<figcaption>Ferneze Villa - Elba</figcaption>
+				</figure>
+				<figure>
+					<img src="assets/images/appartement-paris-xviii.png" alt="Paris XVIII Appartment">
+					<figcaption>Paris XVIII Appartment</figcaption>
+				</figure>
+				<figure>
+					<img src="assets/images/bar-lullaby-paris.png" alt="Lullaby” Bar - Paris">
+					<figcaption>“Lullaby” Bar - Paris</figcaption>
+				</figure>
+				<figure>
+					<img src="assets/images/hotel-first-arte-new-delhi.png" alt="Hotel First Arte - New Delhi">
+					<figcaption>First Arte Hotel - New Delhi</figcaption>
+				</figure>
+			</div>
+		</section>
+		<section id="contact">
+			<h2>Contact</h2>
+			<p>Do you have a project in mind? Let’s talk about it!</p>
+			<form action="#" method="post">
+				<label for="name">Name</label>
+				<input type="text" name="name" id="name">
+				<label for="email">Email</label>
+				<input type="email" name="email" id="email">
+				<label for="message">Message</label>
+				<textarea name="message" id="message" cols="30" rows="10"></textarea>
+				<input type="submit" value="Send">
+			</form>
+		</section>
+	</main>
+
+	<footer>
+		<nav>
+			<ul>
+				<li>Legal Notice</li>
+			</ul>
+		</nav>
+	</footer>
+
+
+	<!-- Java Script-->
+	<script src="./assets/js/index.js"></script>
+	<script src="./assets/js/modals.js"></script>
+</body>
+
+</html>
